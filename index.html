@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABUBAKAR KABIR OTHMAN - PORTFOLIO</title>
+    <link rel="stylesheet" href="icofont/icofont.min.css">
+    <style type="text/css">
+          @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200&display=swap');
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Roboto Mono', monospace;
+        }
+
+        .navigation{
+            position: fixed;
+            width: 100%;
+            height: 60px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #70048b;
+        }
+
+        .navigation div a{
+            color: #ffffff;
+            font-size: 20px;
+            text-decoration: none;
+        }
+
+        .navigation div{
+            margin: 0 15px;
+            color: white;
+        }
+
+        .header{
+            background: #4c0c5c;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        .header{
+            color: white;
+            font-size: 20px;
+            text-align: center;
+        }
+        .header img{
+            border-radius: 50%;
+            width: 250px;
+            height: 250px;
+            margin-bottom: 10px;
+        }
+
+        .main{
+            margin: 1.5em 7em;
+        }
+        .container{
+            text-align: center;
+            margin-bottom: 15px;
+        }
+
+        .skills, .Projects{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 10px ;
+        }
+
+        .skill, .project{
+            width: 200px;
+            text-align: center;
+            margin: 10px;
+            padding: 10px 20px;
+            background: #f1f1f1;
+            border-radius: 10px;
+        }
+        .skill:hover{
+            background: #4c0c5c;
+            color: #f1f1f1;
+        }
+
+        .footer{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            background: #4c0c5c;
+            margin-top: 15px;
+            padding: 15px;
+        }
+
+        input[type=text], input[type=email], textarea, button{
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button:hover{
+            background: #4c0c5c;
+            color: #ffffff;
+        }
+
+        @media screen and (max-width: 900px){
+            .skills, .Projects{
+                flex-direction: column;
+                height: auto;
+                margin-top: 20px;
+                
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="navigation">
+        <div><a href="index.html">Ak Othman</a></div>
+        <div> || </div>
+        <div><a href="#who">WHO</a></div>
+    </div>
+    <div class="header">
+        <img src="ak.jpg" alt="my profile pic" >
+        <p>Hello, I'm Ak othman. A Frontend Developer <br><br><i class="icofont-facebook icofont-2x "></i><i class="icofont-instagram icofont-2x"></i>
+            <i class="icofont-whatsapp icofont-2x"> </i><i class="icofont-twitter icofont-2x"></i> </p>
+    </div>
+    <div class="main">
+        <div class="container">
+             <h2>WHO</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus laudantium fugit rerum sit, at officiis incidunt. 
+            A quis illo accusamus pariatur officia sint! Ad ratione illum eos temporibus voluptate reiciendis.</p>
+        </div>
+
+        <div class="container">
+            <h2>SKILLS</h2>
+            <P>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus laudantium fugit rerum sit, at officiis incidunt. 
+                A quis illo accusamus pariatur officia sint! Ad ratione illum eos temporibus voluptate reiciendis.</P>
+                <div class="skills">
+                    <div class="skill">HTML</div>
+                    <div class="skill">CSS</div>
+                    <div class="skill">JAVASCRIPT</div>
+                </div> 
+        </div>
+
+        <div class="container">
+            <h2>PROJECTS</h2>
+            <P>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus laudantium fugit rerum sit, at officiis incidunt. 
+                A quis illo accusamus pariatur officia sint! Ad ratione illum eos temporibus voluptate reiciendis.</P>
+                <div class="Projects">
+                    <div class="project">Project 1</div>
+                    <div class="project">Project 2</div>
+                    <div class="project">Project 3</div>
+                </div>
+        </div>
+    </div>
+    <div class="footer">
+        <h2 style="text-align: center; color: white;">Contact Me</h2>
+        <form action="">
+            <input type="text" name="Fullname" placeholder="Enter Fullname" required>
+            <input type="email" name="email" placeholder="Enter Email" required>
+            <textarea name="message"></textarea>
+            <button type="button">Submit</button>
+        </form>
+        <p style="color: white; margin-top: 10px;">Design By Ak Othman</p>
+    </div>
+</body>
+</html>
